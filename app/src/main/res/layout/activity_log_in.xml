@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LogIn"
+    android:background="#FFFFFF"
+    tools:ignore="MissingClass">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/teal_200"
+        android:textSize="40sp"
+        />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Sign in to your account"
+        android:textColor="@color/teal_200"
+        android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etMailSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/ed_text_view"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="E-mail"
+            android:textColorHint="#9C434242"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/etPassSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ed_text_view"
+            android:drawableRight="@drawable/baseline_visibility_off_24"
+            android:ems="10"
+            android:paddingRight="10dp"
+            android:drawableTint="@color/black"
+            android:paddingLeft="10dp"
+            android:hint="Password"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="#9C434242"
+            android:layout_marginBottom="5dp"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/bt_forgetPassSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:background="#00000000"
+            android:text="Forget Password"
+            android:textSize="16sp"
+            android:layout_gravity="end"
+            android:textColor="#FF9800"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:id="@+id/bt_signin_SignIn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bt_view"
+            android:text="Log in"
+            android:textColor="#ffff"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:text="Don't have an account?"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <Button
+                android:id="@+id/bt_signup_SignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#03F4F1F1"
+                android:text="Create"
+                android:textAllCaps="false"
+                android:textColor="#FF9800"
+                android:textSize="18sp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
