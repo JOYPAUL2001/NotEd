@@ -62,7 +62,7 @@
             android:background="@drawable/ed_text_view"
             android:ems="10"
             android:textSize="20sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textColorHint="#9C434242"
             android:paddingLeft="10dp"
             android:hint="E-mail"

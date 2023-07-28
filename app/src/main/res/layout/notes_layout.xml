@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardMaxElevation="5dp"
+        android:layout_margin="15dp"
+        android:id="@+id/notecard"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/note"
+            android:padding="10dp"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/notetitle"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:fontFamily="@font/alatsi"
+                    android:text="This is your developer"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1"
+                    >
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/menupop"
+                    android:layout_weight="0"
+                    android:tint="@color/white"
+                    android:src="@drawable/baseline_more_vert_24"
+                    tools:ignore="UseAppTint">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/notecontent"
+                android:padding="10dp"
+                android:text="This is your code which appear here"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

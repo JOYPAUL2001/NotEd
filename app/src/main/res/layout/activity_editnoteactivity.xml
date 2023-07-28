@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editnoteactivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarofeditnote"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/edittitleofnote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/alatsi"
+            android:paddingTop="12dp"
+            android:textColor="#F49800"
+            android:textSize="30sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/editcontentofnote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarofeditnote"
+        android:background="#faf7f7"
+        android:gravity="top|left"
+        android:padding="22dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </EditText>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveeditnote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/teal_200"
+        android:src="@drawable/update"
+        android:tint="@color/white"
+        app:maxImageSize="40dp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</RelativeLayout>
