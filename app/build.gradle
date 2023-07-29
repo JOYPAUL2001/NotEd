@@ -38,7 +38,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore:24.7.0'
     testImplementation 'junit:junit:4.13.2'
 
-   androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
 
@@ -46,13 +46,11 @@ dependencies {
 
     implementation 'com.github.bumptech.glide:glide:4.15.1'
 
-//    //Animation
-//    implementation 'com.github.AtifSayings:Animatoo:1.0.1'
-//
-//    //lottie files
-       implementation 'com.airbnb.android:lottie:4.2.0'
 
-     implementation 'com.firebaseui:firebase-ui-firestore:8.0.1'
+//    lottie files
+    implementation 'com.airbnb.android:lottie:4.2.0'
+
+    implementation 'com.firebaseui:firebase-ui-firestore:8.0.1'
 
 
 }
